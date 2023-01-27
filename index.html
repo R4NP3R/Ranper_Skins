@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANPER Periféricos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <header>
+            <div class="header-menu container" id="sobre">
+                <h1>
+                    RANPER Periféricos
+                </h1>
+                    <img class="menu-button" src="./icons/Hamburguer.png" alt="botão menu">
+                <nav class="menu">
+                    <ul class="flex-content">
+                        <li>
+                            <a href="#sobre">Sobre a loja</a>
+                        </li>
+                        <li>
+                            <a href="#produtos">Produtos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="sobreALoja container flex-content">
+            <img src="https://www.esportelandia.com.br/wp-content/uploads/2020/12/loja-pra-comprar-pc-gamer-pronto.jpg" alt="imagem do interior da loja">
+            <div class="texto-sobreALoja">
+                <h2>
+                    Sobre a loja
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sit, laboriosam velit ex reiciendis culpa vero, amet odit pariatur cumque quidem officiis temporibus minus repellendus reprehenderit eos nihil! Architecto, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facilis illum eius officia voluptatem labore laborum eaque provident aperiam, minus numquam ea vel laudantium nihil temporibus corrupti ab a dolore.</p>
+            </div>
+        </section>
+    
+        <section class="produtos container" id="produtos">
+            <h2>Produtos</h2>
+            <div>
+                <ul>
+                    <li class="flex-content">
+                        <a href="#">
+                            <img src="https://images.kabum.com.br/produtos/fotos/63197/63197_1518114148_index_gg.jpg" alt="headset hyperX cloud 2">
+                            <h3>
+                                Headset HyperX Cloud II
+                            </h3>
+                            <p>
+                                Headset HyperX Cloud II, Surround 7.1 com 2 anos de garantia!
+                            </p>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </li>
+                    <li class="flex-content">
+                        <a href="#">
+                            <img src="https://images.kabum.com.br/produtos/fotos/63197/63197_1518114148_index_gg.jpg" alt="headset hyperX cloud 2">
+                            <h3>
+                                Headset HyperX Cloud II
+                            </h3>
+                            <p>
+                                Headset HyperX Cloud II, Surround 7.1 com 2 anos de garantia!
+                            </p>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </li>
+                    <li class="flex-content">
+                        <a href="#">
+                            <img src="https://images.kabum.com.br/produtos/fotos/63197/63197_1518114148_index_gg.jpg" alt="headset hyperX cloud 2">
+                            <h3>
+                                Headset HyperX Cloud II
+                            </h3>
+                            <p>
+                                Headset HyperX Cloud II, Surround 7.1 com 2 anos de garantia!
+                            </p>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </li>
+                    <li class="flex-content">
+                        <a href="#">
+                            <img src="https://images.kabum.com.br/produtos/fotos/63197/63197_1518114148_index_gg.jpg" alt="headset hyperX cloud 2">
+                            <h3>
+                                Headset HyperX Cloud II
+                            </h3>
+                            <p>
+                                Headset HyperX Cloud II, Surround 7.1 com 2 anos de garantia!
+                            </p>
+                            <button>Adicionar ao carrinho</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $('document').ready(function(){
+            $('.menu-button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+
+</body>
+</html>

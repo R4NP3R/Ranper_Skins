@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.flex-content{
+    display: flex;
+}
+
+body {
+    background-color: #182433;
+}
+
+header{
+    background-color: #101820;
+}
+
+header div{
+    padding: 24px;
+    color:#506982;
+}
+
+.menu-button{
+    display: none;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav li, .produtos li{
+    list-style: none;
+}
+
+header nav li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color:#506982;
+}
+
+.sobreALoja, .produtos {
+    margin-top: 40px;
+}
+
+.sobreALoja img{
+    width: 50%;
+    margin-right: 36px;
+}
+
+.texto-sobreALoja h2, .produtos h2{
+    padding-bottom: 20px;
+    color: #506982;
+}
+
+.texto-sobreALoja p{
+    padding-top: 30px;
+    border-top: 1px solid #506982;
+    color: rgba(255,255,255,.5);
+    font-size: 1.2em;
+}
+
+.produtos ul{
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    width: 100%;
+    border-top: 1px solid #506982;
+    padding-top: 49px;
+}
+
+
+.produtos li {
+    margin: 2%;
+}
+
+.produtos li a{
+    text-decoration: none;
+    color:#506982;
+}
+
+.produtos li img{
+    width: 100%;
+}
+
+
+.produtos li h3 {
+    margin-top: 16px;
+}
+
+.produtos li button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    margin: 16px 0;
+    background-color: #2891c8;
+}
+
+@media screen and (max-width: 767px) {
+
+    header .container{
+        width: 90%;
+    }
+    
+    header div {
+        padding: 0;
+    }
+    
+    .container {
+        width: 90%;
+    }
+    
+    .header-menu {
+        flex-direction: column;
+    }
+
+    .sobreALoja img {
+        margin-right: 0;
+    }
+    header h1 {
+        display: flex;
+        text-align: center;
+    }
+    
+    .sobreALoja {
+        display: block;
+    }
+    
+    .menu-button {
+        width: 1.8em;
+        display: block;
+    }
+    .menu{
+        display: none;
+        margin: 10px 0;
+    }
+    
+    
+    .sobreALoja img {
+        width: 100%;
+    }
+    
+    .texto-sobreALoja h2 {
+        margin-top: 18px;
+    }
+    
+    .produtos ul {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .container{
+        width: 90%;
+    }
+
+    .sobreALoja img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .sobreALoja {
+        flex-direction: column;
+    }
+
+    .produtos ul{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .produtos li {
+        margin: 3%;
+    }
+    
+}
